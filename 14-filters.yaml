@@ -30,7 +30,7 @@
   tasks:
   - name: remove duplicates
     ansible.builtin.debug:
-      msg: "{{ numners | unique }}"
+      msg: "{{ numbers | unique }}"
 
 - name: print min and max
   hosts: localhost
