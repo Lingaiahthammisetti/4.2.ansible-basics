@@ -10,4 +10,13 @@
     - mysql
     - nginx
     - postfix
+
+  - name: started packages
+    ansible.builtin.service:
+      name: "{{ item }}"
+      state: started
+    loop:
+    - mysql
+    - nginx
+    - postfix
     
